@@ -17,7 +17,6 @@ async function getNotes() {
   return rows;
 }
 
-
 //INSERT QUERY => C(CREATE)RUD
 async function insert(title, contents) {
   const [row] = await pool.query(
@@ -44,6 +43,8 @@ async function getNote(id) {
 }
 
 //UPDATE QUERY => CRU(UPDATE)D
+
+
 //DELETE QUERY => CRUD(DELETE)
 async function deleteFields(tableName) {
     // VERY important: validate the table name to prevent SQL injection
